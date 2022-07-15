@@ -63,9 +63,10 @@
   animation: changeBg 12s infinite;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 55px;
+  background-position-y: 85px;
   width: 90%;
   height: 600px;
+  height: 48vw;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -89,6 +90,12 @@
 }
 
 /* media queries */
+@media(max-width: 1000px) {
+  .header-pri {
+    height: 600px;
+  }
+}
+
 @media (max-width: 485px) {
   .header-pri {
     animation: none;
@@ -110,6 +117,7 @@
 .navbar-pri {
   height: 55px;
   width: 100%;
+  margin-top: 15px;
 }
 
 .navbar-pri ul .navi {
@@ -144,7 +152,7 @@
   height: 1.6px;
   bottom: 0;
   left: 0;
-  top: 15px;
+  top: 14.5px;
   background-color: #000;
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -574,7 +582,7 @@
 }
 
 /* media queries */
-@media (max-width: 485px) {
+/* @media (max-width: 485px) {
   .animated-text-mv {
     display: block;
     position: absolute;
@@ -585,9 +593,9 @@
   .inner-text-2-mv {
     width: 260px;
   }
-}
+} */
 
-@media (max-width: 360px) {
+@media (max-width: 485px) {
   .animated-text-mv {
     display: block;
     position: absolute;
@@ -711,11 +719,6 @@
     padding-right: 28px;
     height: 36px;
     font-size: 12px;
-  }
-}
-
-@media (max-width: 360px) {
-  .view-more {
     left: 18px;
   }
 }
@@ -898,7 +901,17 @@
   width: 2vw;
 }
 
+#load-more-section {
+  display: none;
+}
+
 /* media queries */
+@media(min-width: 1281px) {
+  .what-we-do {
+    margin-top: 18vw;
+  }
+}
+
 @media (max-width: 600px) {
   .what-we-do {
     display: none;
@@ -912,6 +925,7 @@
   text-align: center;
   display: inline-block;
   display: none;
+  margin-top: 120px;
 }
 
 .title-tv {
@@ -2034,6 +2048,7 @@
   display: block;
   margin: auto;
   margin-bottom: 100px;
+  background-size: contain;
 }
 
 .form h1 {
@@ -2106,7 +2121,8 @@
   margin: auto;
   display: block;
   margin-top: -498px;
-  margin-left: 640px;
+  float: right;
+  margin-right: 100px;
 }
 
 .contact {
@@ -2166,10 +2182,10 @@
   }
 
   .contact {
+    float: left;
     height: 500px;
     margin-top: 80px;
     margin-left: 80px;
-    /* background-color: aqua; */
   }
 }
 
@@ -2299,6 +2315,11 @@
 .our-services ul li a{
   color: #878787;
   font-family: "Yantramanav", sans-serif;
+  transition: 0.1s linear;
+}
+
+.our-services ul li a:hover{
+  color: white;
 }
 
 .other-links {
@@ -2323,6 +2344,12 @@
 .other-links ul li a{
   color: #878787;
   font-family: "Yantramanav", sans-serif;
+  transition: 0.1s linear;
+}
+
+.other-links ul li a:hover{
+  color: white;
+  font-family: "Yantramanav", sans-serif;
 }
 
 .copyright {
@@ -2346,9 +2373,20 @@
   font-weight: lighter;
   text-align: center;
   padding-top: 26px;
+  transition: 0.1s linear;
+}
+
+.copyright p a:hover {
+  color: white;
 }
 
 /* media queries */
+@media (min-width: 1281px) {
+  .footer-container {
+    margin-left: 200px;
+  }
+}
+
 @media(max-width: 1190px) { 
   .footer {
     position: absolute;

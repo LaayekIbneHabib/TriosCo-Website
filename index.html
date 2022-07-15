@@ -51,7 +51,7 @@
           <!-- navbar -->
           <div class="navbar-pri">
             <img src="./images/icons/logo-dark.png" alt="" />
-            <ul>
+            <ul id="navigation-menu">
               <li class="active-pri navi"><a href="index.html">HOME</a></li>
               <li class="navi"><a href="about.html">ABOUT</a></li>
               <li class="dropdown-pri navi">
@@ -451,7 +451,7 @@
             <p>CONSULTING, DESIGN, MARKETING, SHINE ONLINE, TRIOSCO STUDIOS, WEBSITE</p>
           </div>
           <div class="our-work-box box-3-our-work">
-            <img src="./images/projects/HGF-1.jpg" alt="">
+            <img src="./images/projects/Suman_Nathwani-1-1.jpg" alt="">
             <h1>Suman Nathwani</h1>
             <p>MARKETING, SHINE ONLINE, WEBSITE</p>
           </div>
@@ -459,12 +459,12 @@
 
         <div class="row-2-our-work">
           <div class="our-work-box box-4-our-work">
-            <img src="./images/projects/Kriplani-1-1.jpg" alt="">
+            <img src="./images/projects/spoonfuel-1.jpg" alt="">
             <h1>Spoonfuel</h1>
             <p>DESIGN MARKETING, TRIOSCO STUDIOS</p>
           </div>
           <div class="our-work-box box-5-our-work">
-            <img src="./images/projects/masu-1.jpg" alt="">
+            <img src="./images/projects/Natkhat-1.jpg" alt="">
             <h1>Natkhat</h1>
             <p>DESIGN, TRIOSCO STUDIOS</p>
           </div>
@@ -477,24 +477,80 @@
 
         <div class="row-3-our-work">
           <div class="our-work-box box-7-our-work">
-            <img src="./images/projects/Natkhat-1.jpg" alt="">
+            <img src="./images/projects/masu-1.jpg" alt="">
             <h1>Masu Living</h1>
             <p>DESIGN, WEBSITE</p>
           </div>
           <div class="our-work-box box-8-our-work">
-            <img src="./images/projects/spoonfuel-1.jpg" alt="">
+            <img src="./images/projects/Kriplani-1-1.jpg" alt="">
             <h1>Kripalani Jewellers</h1>
             <p>DESIGN, MARKETING, TRIOSCO STUDIOS</p>
           </div>
           <div class="our-work-box box-9-our-work">
-            <img src="./images/projects/Suman_Nathwani-1-1.jpg" alt="">
+            <img src="./images/projects/HGF-1.jpg" alt="">
             <h1>Happy Green Farms</h1>
             <p>DESIGN, MARKETING</p>
           </div>
         </div>
+
+        <div id="load-more-section">
+          <div class="row-3-our-work">
+            <div class="our-work-box box-7-our-work">
+              <img src="./images/projects/Feel_It-1.jpg" alt="">
+              <h1>Masu Living</h1>
+              <p>DESIGN, WEBSITE</p>
+            </div>
+            <div class="our-work-box box-8-our-work">
+              <img src="./images/projects/Tatvam-1.jpg" alt="">
+              <h1>Kripalani Jewellers</h1>
+              <p>DESIGN, MARKETING, TRIOSCO STUDIOS</p>
+            </div>
+            <div class="our-work-box box-9-our-work">
+              <img src="./images/projects/tds-thumbnail-1.jpg" alt="">
+              <h1>Happy Green Farms</h1>
+              <p>DESIGN, MARKETING</p>
+            </div>
+          </div>
+
+          <div class="row-3-our-work">
+            <div class="our-work-box box-7-our-work">
+              <img src="./images/projects/1-1024x1024-1.jpg" alt="">
+              <h1>Masu Living</h1>
+              <p>DESIGN, WEBSITE</p>
+            </div>
+            <div class="our-work-box box-8-our-work">
+              <img src="./images/projects/Moreish-1.jpg" alt="">
+              <h1>Kripalani Jewellers</h1>
+              <p>DESIGN, MARKETING, TRIOSCO STUDIOS</p>
+            </div>
+            <div class="our-work-box box-9-our-work">
+              <img src="./images/projects/classic-thumbnail-1-1.jpg" alt="">
+              <h1>Happy Green Farms</h1>
+              <p>DESIGN, MARKETING</p>
+            </div>
+          </div>
+
+          <div class="row-3-our-work">
+            <div class="our-work-box box-7-our-work">
+              <img src="./images/projects/la-lingerie-thumbnail-1.jpg" alt="">
+              <h1>Masu Living</h1>
+              <p>DESIGN, WEBSITE</p>
+            </div>
+            <div class="our-work-box box-8-our-work">
+              <img src="./images/projects/kaaram-thumbnail-1.jpg" alt="">
+              <h1>Kripalani Jewellers</h1>
+              <p>DESIGN, MARKETING, TRIOSCO STUDIOS</p>
+            </div>
+            <div class="our-work-box box-9-our-work">
+              <img src="./images/projects/nut-co-thumbnail-1.jpg" alt="">
+              <h1>Happy Green Farms</h1>
+              <p>DESIGN, MARKETING</p>
+            </div>
+          </div>
+        </div>
         <div class="load-more-btn-pri">
-          <img src="./images/icons/icon-dark.png" alt="" />
-          <a href="">LOAD MORE</a>
+          <img src="./images/icons/icon-dark.png" onclick="loadMore()" alt="" />
+          <a onclick="loadMore()">LOAD MORE</a>
         </div>
       </div>
       <!-- end -->
@@ -582,6 +638,7 @@
             <p>DESIGN, MARKETING</p>
           </div>
         </div>
+
         <div class="load-more-btn-tv">
           <img src="./images/icons/icon-dark.png" alt="" />
           <a href="">LOAD MORE</a>
@@ -700,7 +757,8 @@
             excites us - we’re up-to-date on the latest trends and fads, and mastering new ones every day.</p>
           <button class="read-more" role="button">READ MORE</button>
         </div>
-        <video src="./images/main/Comp-1.mp4" controls loop class="triosco-video"></video>
+        <video src="./images/main/Comp-1.mp4" controls loop class="triosco-video"
+          poster="./images/main/Thumbnail.jpg"></video>
       </div>
       <!-- end -->
 
@@ -718,7 +776,8 @@
             excites us - we’re up-to-date on the latest trends and fads, and mastering new ones every day.</p>
           <button class="read-more-mv" role="button">READ MORE</button>
         </div>
-        <video src="./images/main/Comp-1.mp4" controls loop class="triosco-video-mv"></video>
+        <video src="./images/main/Comp-1.mp4" controls loop class="triosco-video-mv"
+          poster="./images/main/Thumbnail.jpg"></video>
       </div>
       <!-- end -->
 
@@ -974,38 +1033,45 @@
           <div class="social">
             <h1>Follow us</h1>
             <ul>
-              <li onclick="changeIcon()"><img src="./images/temp/Facebook.png" alt="" style="width: 36px;"></li>
-              <li onclick="changeIcon()"><img src="./images/temp/Instagram.png" alt="" style="width: 36px;"></li>
-              <li onclick="changeIcon()"><img src="./images/temp/Linkedin.png" alt="" style="width: 36px;"></li>
-              <li onclick="changeIcon()"><img src="./images/temp/Twitter.png" alt="" style="width: 36px;"></li>
+              <li><a href="https://www.facebook.com/TriosCo/" target="_blank"><img src="./images/temp/Facebook.png"
+                    alt="" style="width: 36px;"></a></li>
+              <li><a href="https://www.instagram.com/triosco_3/" target="_blank"><img src="./images/temp/Instagram.png"
+                    alt="" style="width: 36px;"></a></li>
+              <li><a href="https://www.linkedin.com/company/triosco/" target="_blank"><img
+                    src="./images/temp/Linkedin.png" alt="" style="width: 36px;"></a></li>
+              <li><a href="https://triosco.com/#" target="_blank"><img src="./images/temp/Twitter.png" alt=""
+                    style="width: 36px;"></a>
+              </li>
             </ul>
           </div>
 
-          <div class="our-services">
-            <h1>Our Services</h1>
-            <ul>
-              <li><a href="#">Design</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Website</a></li>
-              <li><a href="#">e-Commerce Operations</a></li>
-              <li><a href="#">Shine Online</a></li>
-              <li><a href="#">TriosCo Studios</a></li>
-            </ul>
-          </div>
+          <div class="footer-container">
+            <div class="our-services">
+              <h1>Our Services</h1>
+              <ul>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Website</a></li>
+                <li><a href="#">e-Commerce Operations</a></li>
+                <li><a href="#">Shine Online</a></li>
+                <li><a href="#">TriosCo Studios</a></li>
+              </ul>
+            </div>
 
-          <div class="other-links">
-            <h1>Other Links</h1>
-            <ul>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Copyright</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
-            </ul>
+            <div class="other-links">
+              <h1>Other Links</h1>
+              <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="copyright">
-          <p>Copyright © 2022, All Right Reserved <a href="#">TriosCo</a></p>
+          <p>Copyright © 2022, All Right Reserved <a href="https://triosco.com/" target="_blank">TriosCo</a></p>
         </div>
       </div>
       <!-- end -->
@@ -1038,7 +1104,6 @@
     }
     slideShow();
     // end
-
   </script>
 
   <!-- other script file -->

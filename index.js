@@ -14,3 +14,13 @@ function show() {
     document.getElementsByTagName("nav")[0].className = "menu";
   }
 }
+
+// load more
+function loadMore() {
+  document.getElementById("load-more-section").style.display = "block";
+}
+// end
+
+// sort
+
+// end
