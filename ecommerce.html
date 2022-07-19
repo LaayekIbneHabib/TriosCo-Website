@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-commerce Operations</title>
+        <link rel="icon" href="./images/icons/icon.png" />
+
+        <!-- burger menu -->
+        <link rel="stylesheet" type="text/css" href="./public/css/reset.min.css" />
+        <link rel="stylesheet" type="text/css" href="./public/css/style.min.css" />
+        <link rel="stylesheet" type="text/css" href="./public/css/ionicon.min.css" />
+        <!-- end -->
+
+        <!-- roboto 500 font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+        <!-- end -->
+
+        <!-- yantramanav 400 font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap" rel="stylesheet" />
+        <!-- end -->
+
+        <!-- montserrat 200 font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+        <!-- end -->
+
+        <!-- main stylesheet -->
+        <link rel="stylesheet" href="stylesheets/style.css" />
+        <!-- end -->
+
+        <!-- internal css -->
+        <style>
+            .container-pri {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .header-pri {
+                animation: none;
+            }
+
+            @media (max-width: 485px) {
+                .header-pri {
+                    animation: none;
+                    background-repeat: no-repeat;
+                    background-position-y: 55px;
+                    width: 90%;
+                    height: 10px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    position: relative;
+                }
+            }
+
+            .animated-text,
+            .animated-text-tv,
+            .animated-text-mv {
+                display: none;
+            }
+
+            .view-more {
+                display: none;
+            }
+
+            .what-we-do-tv,
+            .what-we-do-mv {
+                margin-top: -40px;
+            }
+
+            .about-head-section {
+                /* background-color: red; */
+                width: 90%;
+                display: block;
+                margin: auto;
+                margin-bottom: 100px;
+            }
+
+
+
+            .why-triosco h1 {
+                font-size: 48px;
+                font-weight: lighter;
+                font-family: "Roboto", sans-serif;
+            }
+
+
+
+            .why-triosco p span {
+                font-size: 18px;
+                font-weight: lighter;
+                font-family: "Yantramanav", sans-serif;
+            }
+
+            .our-mission {
+                text-align: left;
+                margin-top: -80px;
+                margin-bottom: 20px;
+
+
+
+            }
+
+            .our-mission h3 {
+                font-family: "Yantramanav", sans-serif;
+                font-size: 26px;
+            }
+
+            .our-mission h2 {
+                font-family: "Roboto", sans-serif;
+                font-size: 28px;
+                margin-top: 25px;
+                font-weight: lighter;
+            }
+
+            @media (max-width: 1300px) {
+                .our-mission {
+                    text-align: left;
+                    margin-top: 60px;
+                    margin-bottom: 10px;
+
+                }
+
+            }
+
+
+            .h1-banner-design {
+                font-family: "Roboto", sans-serif;
+                font-size: 48px;
+                font-weight: 100;
+                line-height: 60px;
+                padding: 40px;
+
+            }
+
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+
+            .row::after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 768px) {
+
+                /* For mobile phones: */
+                [class*="col-"] {
+                    width: 100%;
+                }
+            }
+
+            .quoteee {
+                background-image: url('./images/main/quotes.png');
+                text-align: center;
+                padding-top: 80px;
+                padding-bottom: 80px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                margin-top: 50px;
+                margin-bottom: 50px;
+
+            }
+
+            .design-page {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+            .design-sec {
+                padding-left: 60px;
+                padding-right: 60px;
+                margin-top: -50px;
+            }
+
+            @media(max-width: 420px) {
+
+                .design-page {
+                    padding: 5px;
+
+                }
+
+                .design-sec {
+                    padding: 10px;
+                }
+
+
+            }
+
+        </style>
+        <!-- end -->
+    </head>
+
+    <body>
+        <!-- loader -->
+        <div class="loader-background"
+            style="background-color: rgb(252, 252, 252); width: 100%; height: 600px; overflow: hidden;" id="loader">
+            <img src="./images/main/loader.gif" alt="" id="loader">
+        </div>
+        <!-- end -->
+
+        <!-- window -->
+        <div id="window">
+            <!-- container -->
+            <div class="container-pri">
+                <!-- header -->
+                <div class="header-pri">
+                    <!-- navbar -->
+                    <div class="navbar-pri">
+                        <img src="./images/icons/logo-dark.png" alt="" />
+                        <ul>
+                            <li class="navi"><a href="index.html">HOME</a></li>
+                            <li class=" navi"><a href="about.html">ABOUT</a></li>
+                            <li class="dropdown-pri navi">
+                                <a href="#" class="active-pri dropbtn-pri">SERVICES</a>
+                                <div class="dropdown-content-pri">
+                                    <a href="design.html" style="color: white">Design</a>
+                                    <a href="marketing.html" style="color: white">Marketing</a>
+                                    <a href="website.html" style="color: white">Website</a>
+                                    <a href="ecommerce.html" style="color: white">e-Commerce Operations</a>
+                                    <a href="shineOnline.html" style="color: white">Shine Online</a>
+                                    <a href="trioscoStudios.html" style="color: white">TriosCo Studios</a>
+                                </div>
+                            </li>
+                            <li class="navi"><a href="projects.html">PROJECTS</a></li>
+                            <li class="navi"><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <!-- end -->
+
+                    <!-- animated text -->
+                    <h1 class="animated-text">
+                        <div class="text-1">
+                            <span class="inner-text-1">360° SOLUTIONS</span>
+                            <span class="inner-text-1">DESIGN STUDIO</span>
+                            <span class="inner-text-1">E-COMMERCE SOLUTION</span>
+                            <span class="inner-text-1">DIGITAL MARKETING</span>
+                        </div>
+                        <br />
+                        <div class="text-2">
+                            <span class="inner-text-2">We Help You<br />
+                                Shine Online</span>
+                            <span class="inner-text-2">Captivating<br />
+                                Design Solutions</span>
+                            <span class="inner-text-2">A To Z Operation<br />
+                                Solution</span>
+                            <span class="inner-text-2">Human Focused<br />
+                                Marketing</span>
+                        </div>
+                    </h1>
+                    <!-- end -->
+
+                    <!-- animated text mobile view-->
+                    <h1 class="animated-text-mv">
+                        <div class="text-1-mv">
+                            <span class="inner-text-1-mv">360° SOLUTIONS</span>
+                            <span class="inner-text-1-mv">DESIGN STUDIO</span>
+                            <span class="inner-text-1-mv">E-COMMERCE SOLUTION</span>
+                            <span class="inner-text-1-mv">DIGITAL MARKETING</span>
+                        </div>
+                        <br />
+                        <div class="text-2-mv">
+                            <span class="inner-text-2-mv">We Help<br />
+                                You Shine<br />
+                                Online</span>
+                            <span class="inner-text-2-mv">Captivating<br />
+                                Design<br />
+                                Solutions</span>
+                            <span class="inner-text-2-mv">A To Z<br />
+                                Operation<br />
+                                Solution</span>
+                            <span class="inner-text-2-mv">Human<br />
+                                Focused<br />
+                                Marketing</span>
+                        </div>
+                    </h1>
+                    <!-- end -->
+
+                    <!-- button -->
+                    <button class="view-more" role="button">VIEW MORE</button>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+            </div>
+            <!-- end -->
+
+            <!-- head materials -->
+            <div class="about-head-section">
+                <h1 class="h1-banner-design">We take care of all your online businesses just for YOU.</h1>
+
+                <img src="./images/main/e-Commerce-Operations.jpg" alt="">
+
+                <!-- <div class="why-triosco">
+                    <div class="container-design">
+
+                        <h1>Design</h1>
+                        <br>
+                        <p><span>When was the last time you ate a dull-looking dish? Or picked up a<br> book with a boring cover? Visuals are everything! The right graphic<br> designing solution can make or break your business. Design and<br> visual content is the biggest challenge – The perfect creative that<br> encapsulates your brand is a challenge for many businesses.<br> Research proves that users retain photos and videos 60,000 times<br> more than text.” There’s no other way around it- It’s all about the<br> look of your brand!.</span>
+                        </p>
+                    </div>
+                
+                        <div class="our-mission container-mission" >
+                        
+                            <h2>We help you be consistent across platforms and build a brand identity. We make designs that – Our holistic approach covering all aspects of design helps attract users, make them curious for more, drives conversion rates and inspires action.</h2>
+                        </div>
+                
+                    
+                </div>-->
+            </div>
+            <!-- end -->
+
+
+
+
+
+            <!-- end -->
+
+            <!-- burger menu -->
+            <div class="header">
+                <section class="container">
+                    <div class="wrapper">
+                        <a href="index.html" class="brand"><img src="./images/icons/logo-dark.png" alt="" /></a>
+                        <button type="button" class="burger" id="burger">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </button>
+                        <span class="overlay" id="overlay"></span>
+                        <nav class="navbar" id="navbar">
+                            <ul class="menu">
+                                <li class="menu-item"><a href="index.html">HOME</a></li>
+                                <li class="menu-item"><a href="about.html">ABOUT</a></li>
+                                <li class="menu-item menu-item-child">
+                                    <a href="#" data-toggle="sub-menu">SERVICES <i class="expand"></i></a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="design.html">Desing</a></li>
+                                        <li class="menu-item"><a href="marketing.html">Marketing</a></li>
+                                        <li class="menu-item"><a href="website.html">Website</a></li>
+                                        <li class="menu-item"><a href="ecommerce.html">e-Commerce Operations</a></li>
+                                        <li class="menu-item"><a href="shineOnline.html">Shine Online</a></li>
+                                        <li class="menu-item"><a href="trioscoStudios.html">TriosCo Studios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-child">
+                                    <a href="projects.html">PROJECTS</i></a>
+                                </li>
+                                <li class="menu-item"><a href="contact.html">CONTACT US</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+            <!-- end -->
+            <!---------design section-->
+
+
+            <!---------------------------------quoteeeeeeeeeeeeeeeeeeeee-------------->
+
+            <div class="row">
+                <div class="col-12 quoteee">
+                    <h2>“The design is not just what it looks like and feels like. The design is how it works” — Steve
+                        Jobs.”</h2>
+                </div>
+            </div>
+
+
+            <!------------------listssss of services in design page -->
+
+            <div class="row design-page">
+                <h1
+                    style="font-size: 52px; font-weight: lighter; padding-left: 20px; font-family: 'Roboto', sans-serif; ">
+                    e-Commerce Operations</h1>
+                <div class="col-6" style="padding-left: 20px;">
+                    <ul>
+
+                        <li>⦿ Product Selection​</li>
+                        <li>⦿ Product Placement</li>
+                        <li>⦿ Product Sourcing</li>
+                        <li>⦿ ERP Integration</li>
+                        <li>⦿ Customer Service</li>
+                        <li>⦿ Complete Backend Operation</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-6 our-mission ">
+                    <h2>TriosCo is here to help you every step of the way. Consult with us, and we will use our years of
+                        expertise to guide you through every query. Make the right decisions for your business with
+                        TriosCo TODAY!</h2>
+
+
+                </div>
+            </div>
+
+
+
+            <!-- our works -->
+            <div class="our-work">
+                <div class="title-our-work">
+                    <h1>Our Work</h1>
+                </div>
+
+
+
+                <div class="row-1-our-work">
+                    <div class="our-work-box box-1-our-work">
+                        <img src="./images/projects/2-2.jpg" alt="">
+                        <h1>Fab Gourmet</h1>
+                        <p>CONSULTING, DESIGN, MARKETING, WEBSITE</p>
+                    </div>
+                    <div class="our-work-box box-2-our-work">
+                        <img src="./images/projects/Adra-1.jpg" alt="">
+                        <h1>Adra</h1>
+                        <p>CONSULTING, DESIGN, MARKETING, SHINE ONLINE, TRIOSCO STUDIOS, WEBSITE</p>
+                    </div>
+                    <div class="our-work-box box-3-our-work">
+                        <img src="./images/projects/HGF-1.jpg" alt="">
+                        <h1>Suman Nathwani</h1>
+                        <p>MARKETING, SHINE ONLINE, WEBSITE</p>
+                    </div>
+                </div>
+
+                <div class="row-2-our-work">
+                    <div class="our-work-box box-4-our-work">
+                        <img src="./images/projects/Kriplani-1-1.jpg" alt="">
+                        <h1>Spoonfuel</h1>
+                        <p>DESIGN MARKETING, TRIOSCO STUDIOS</p>
+                    </div>
+                    <div class="our-work-box box-5-our-work">
+                        <img src="./images/projects/masu-1.jpg" alt="">
+                        <h1>Natkhat</h1>
+                        <p>DESIGN, TRIOSCO STUDIOS</p>
+                    </div>
+                    <div class="our-work-box box-6-our-work">
+                        <img src="./images/projects/Monet-1-1-1.jpg" alt="">
+                        <h1>Monet</h1>
+                        <p>DESIGN, MARKETING</p>
+                    </div>
+                </div>
+
+                <div class="row-3-our-work">
+                    <div class="our-work-box box-7-our-work">
+                        <img src="./images/projects/Natkhat-1.jpg" alt="">
+                        <h1>Masu Living</h1>
+                        <p>DESIGN, WEBSITE</p>
+                    </div>
+                    <div class="our-work-box box-8-our-work">
+                        <img src="./images/projects/spoonfuel-1.jpg" alt="">
+                        <h1>Kripalani Jewellers</h1>
+                        <p>DESIGN, MARKETING, TRIOSCO STUDIOS</p>
+                    </div>
+                    <div class="our-work-box box-9-our-work">
+                        <img src="./images/projects/Suman_Nathwani-1-1.jpg" alt="">
+                        <h1>Happy Green Farms</h1>
+                        <p>DESIGN, MARKETING</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end -->
+
+            <!-- our works for tablet view -->
+            <div class="our-work-tv">
+                <div class="title-our-work-tv">
+                    <h1>Our Work</h1>
+                </div>
+
+
+
+                <div class="row-1-our-work-tv">
+                    <div class="our-work-box-tv box-1-our-work-tv">
+                        <img src="./images/projects/2-2.jpg" alt="">
+                        <h1>Fab Gourmet</h1>
+                        <p>CONSULTING, DESIGN, MARKETING, WEBSITE</p>
+                    </div>
+                    <div class="our-work-box-tv box-2-our-work-tv">
+                        <img src="./images/projects/Adra-1.jpg" alt="">
+                        <h1>Adra</h1>
+                        <p>CONSULTING, DESIGN, MARKETING, SHINE ONLINE, TRIOSCO STUDIOS, WEBSITE</p>
+                    </div>
+                </div>
+
+                <div class="row-2-our-work-tv">
+                    <div class="our-work-box-tv box-3-our-work-tv">
+                        <img src="./images/projects/HGF-1.jpg" alt="">
+                        <h1>Suman Nathwani</h1>
+                        <p>MARKETING, SHINE ONLINE, WEBSITE</p>
+                    </div>
+                    <div class="our-work-box-tv box-4-our-work-tv">
+                        <img src="./images/projects/Kriplani-1-1.jpg" alt="">
+                        <h1>Spoonfuel</h1>
+                        <p>DESIGN MARKETING, TRIOSCO STUDIOS</p>
+                    </div>
+                </div>
+
+                <div class="row-3-our-work-tv">
+                    <div class="our-work-box-tv box-5-our-work-tv">
+                        <img src="./images/projects/masu-1.jpg" alt="">
+                        <h1>Natkhat</h1>
+                        <p>DESIGN, TRIOSCO STUDIOS</p>
+                    </div>
+                    <div class="our-work-box-tv box-6-our-work-tv">
+                        <img src="./images/projects/Monet-1-1-1.jpg" alt="">
+                        <h1>Monet</h1>
+                        <p>DESIGN, MARKETING</p>
+                    </div>
+                </div>
+
+                <div class="row-4-our-work-tv">
+                    <div class="our-work-box-tv box-7-our-work-tv">
+                        <img src="./images/projects/Natkhat-1.jpg" alt="">
+                        <h1>Masu Living</h1>
+                        <p>DESIGN, WEBSITE</p>
+                    </div>
+                    <div class="our-work-box-tv box-8-our-work-tv">
+                        <img src="./images/projects/spoonfuel-1.jpg" alt="">
+                        <h1>Kripalani Jewellers</h1>
+                        <p>DESIGN, MARKETING, TRIOSCO STUDIOS</p>
+                    </div>
+                </div>
+
+                <div class="row-5-our-work-tv">
+                    <div class="our-work-box-tv box-9-our-work-tv">
+                        <img src="./images/projects/Suman_Nathwani-1-1.jpg" alt="">
+                        <h1>Happy Green Farms</h1>
+                        <p>DESIGN, MARKETING</p>
+                    </div>
+                    <div class="our-work-box-tv box-10-our-work-tv">
+                        <img src="./images/projects/Suman_Nathwani-1-1.jpg" alt="">
+                        <h1>Happy Green Farms</h1>
+                        <p>DESIGN, MARKETING</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end -->
+
+            <!-- our works for mobile view -->
+            <div class="our-work-mv">
+                <div class="title-our-work-mv">
+                    <h1>Our Work</h1>
+                </div>
+
+
+
+                <div class="row-1-our-work-mv">
+                    <div class="our-work-box-mv box-1-our-work-mv">
+                        <img src="./images/projects/2-2.jpg" alt="">
+                        <h1>Fab Gourmet</h1>
+                        <p>CONSULTING, DESIGN, MARKETING, WEBSITE</p>
+                    </div>
+                </div>
+
+                <div class="row-2-our-work-mv">
+                    <div class="our-work-box-mv box-2-our-work-mv">
+                        <img src="./images/projects/Adra-1.jpg" alt="">
+                        <h1>Adra</h1>
+                        <p>CONSULTING, DESIGN, MARKETING, SHINE ONLINE, TRIOSCO STUDIOS, WEBSITE</p>
+                    </div>
+                </div>
+
+                <div class="row-3-our-work-mv">
+                    <div class="our-work-box-mv box-3-our-work-mv">
+                        <img src="./images/projects/HGF-1.jpg" alt="">
+                        <h1>Suman Nathwani</h1>
+                        <p>MARKETING, SHINE ONLINE, WEBSITE</p>
+                    </div>
+                </div>
+
+                <div class="row-4-our-work-mv">
+                    <div class="our-work-box-mv box-4-our-work-mv">
+                        <img src="./images/projects/Kriplani-1-1.jpg" alt="">
+                        <h1>Spoonfuel</h1>
+                        <p>DESIGN MARKETING, TRIOSCO STUDIOS</p>
+                    </div>
+                </div>
+
+                <div class="row-5-our-work-mv">
+                    <div class="our-work-box-mv box-5-our-work-mv">
+                        <img src="./images/projects/masu-1.jpg" alt="">
+                        <h1>Natkhat</h1>
+                        <p>DESIGN, TRIOSCO STUDIOS</p>
+                    </div>
+                </div>
+
+                <div class="row-6-our-work-mv">
+                    <div class="our-work-box-mv box-6-our-work-mv">
+                        <img src="./images/projects/Monet-1-1-1.jpg" alt="">
+                        <h1>Monet</h1>
+                        <p>DESIGN, MARKETING</p>
+                    </div>
+                </div>
+
+                <div class="row-7-our-work-mv">
+                    <div class="our-work-box-mv box-7-our-work-mv">
+                        <img src="./images/projects/Natkhat-1.jpg" alt="">
+                        <h1>Masu Living</h1>
+                        <p>DESIGN, WEBSITE</p>
+                    </div>
+                </div>
+
+                <div class="row-8-our-work-mv">
+                    <div class="our-work-box-mv box-8-our-work-mv">
+                        <img src="./images/projects/spoonfuel-1.jpg" alt="">
+                        <h1>Kripalani Jewellers</h1>
+                        <p>DESIGN, MARKETING, TRIOSCO STUDIOS</p>
+                    </div>
+                </div>
+
+                <div class="row-9-our-work-mv">
+                    <div class="our-work-box-mv box-9-our-work-mv">
+                        <img src="./images/projects/Suman_Nathwani-1-1.jpg" alt="">
+                        <h1>Happy Green Farms</h1>
+                        <p>DESIGN, MARKETING</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end -->
+
+
+
+
+
+
+
+
+            <!-- form -->
+            <div class="form">
+                <h1>Connect With Us Now!</h1>
+                <div class="india">
+                    <img src="./images/main/IND.jpg" alt="">
+                    <br>
+                    <p>A: Primarc Tower
+                        DN 36, Collegemore, Sector V, Kolkata, West Bengal 700091, 10th Floor, Room No. 1003.</p>
+                    <br>
+                    <p>E: hello@triosco.com</p>
+                    <br>
+                    <p>T: <a href="tel:+919885781606">+91 9885781606</a></p>
+                    <br>
+                    <span>
+                        <p><a href="tel:+91 9674904987">+91 9674904987</a></p>
+                    </span>
+                </div>
+                <div class="usa">
+                    <img src="./images/main/USA.jpg" alt="">
+                    <br>
+                    <p>A: 1210 S.Indiana Ave<br>
+                        Chicago, IL 60605 USA.</p>
+                    <br>
+                    <p>E: sales@triosco.com</p>
+                    <br>
+                    <p>T: <a href="tel:+1-929-899-0503">+1-929-899-0503</a></p>
+                    <br>
+                    <span>
+                        <p><a href="tel:+1-929-899-0503">+1-929-899-0503</a></p>
+                    </span>
+                </div>
+
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <br>
+                    <br>
+                    <form action="https://formspree.io/f/myyoqvpq" method="POST" target="_blank">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <br>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <br>
+                        <input type="text" name="phoneNumber" placeholder="Phone Number" required>
+                        <br>
+                        <input type="text" name="message" placeholder="Message...">
+                        <br>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+            <!-- end -->
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="card">
+                    <img src="./images/icons/logo-light.png" alt="">
+                    <p>TriosCo – Create | Connect | Transcend</p>
+                    <div class="social">
+                        <h1>Follow us</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/TriosCo/" target="_blank"><img
+                                        src="./images/temp/Facebook.png" alt="" style="width: 36px;"></a></li>
+                            <li><a href="https://www.instagram.com/triosco_3/" target="_blank"><img
+                                        src="./images/temp/Instagram.png" alt="" style="width: 36px;"></a></li>
+                            <li><a href="https://www.linkedin.com/company/triosco/" target="_blank"><img
+                                        src="./images/temp/Linkedin.png" alt="" style="width: 36px;"></a></li>
+                            <li><a href="https://triosco.com/#" target="_blank"><img src="./images/temp/Twitter.png"
+                                        alt="" style="width: 36px;"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-container">
+                        <div class="our-services">
+                            <h1>Our Services</h1>
+                            <ul>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Website</a></li>
+                                <li><a href="#">e-Commerce Operations</a></li>
+                                <li><a href="#">Shine Online</a></li>
+                                <li><a href="#">TriosCo Studios</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="other-links">
+                            <h1>Other Links</h1>
+                            <ul>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#">Copyright</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2022, All Right Reserved <a href="https://triosco.com/">TriosCo</a></p>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+        <!-- end -->
+    </body>
+
+    <script>
+        // loader
+        const myTimeout = setTimeout(myGreeting, 3000);
+
+        function myGreeting() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("window").style.display = "block";
+        }
+        // end
+
+        // testimonial
+        var indexValue = 0;
+        function slideShow() {
+            setTimeout(slideShow, 5000);
+            var x;
+            const reviews = document.getElementsByClassName("reviews");
+            for (x = 0; x < reviews.length; x++) {
+                reviews[x].style.display = "none";
+            }
+            indexValue++;
+            if (indexValue > reviews.length) { indexValue = 1 }
+            reviews[indexValue - 1].style.display = "block";
+        }
+        slideShow();
+    // end
+    </script>
+
+    <!-- other script file -->
+    <script defer src="./public/js/script.js"></script>
+    <!-- end -->
+
+    <!-- main script file -->
+    <script src="index.js"></script>
+    <!-- end -->
+
+</html>
