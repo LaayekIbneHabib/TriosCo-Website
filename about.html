@@ -108,9 +108,10 @@
             }
 
             .our-mission {
-                text-align: right;
-                margin-top: -354px;
-                margin-bottom: 400px;
+                text-align: left;
+                margin-top:54px;
+                margin-bottom: 50px;
+                padding: 20px;
             }
 
             .our-mission h3 {
@@ -134,7 +135,7 @@
             }
 
             .our-team {
-                margin-top: -60px;
+                margin-top: 0px;
             }
 
             .our-team h1 {
@@ -247,6 +248,117 @@
                 }
             }
 
+
+
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+
+            .row::after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 768px) {
+
+                /* For mobile phones: */
+                [class*="col-"] {
+                    width: 100%;
+                }
+            }
+
+            .quoteee {
+                background-image: url('./images/main/quotes.png');
+                text-align: center;
+                padding-top: 80px;
+                padding-bottom: 80px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                margin-top: 50px;
+                margin-bottom: 50px;
+
+            }
+
+            .design-page {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+            .design-sec {
+                padding-left: 0px;
+                padding-right: 60px;
+                margin-top: -50px;
+            }
+
+            @media(max-width: 420px) {
+
+                .design-page {
+                    padding: 5px;
+
+                }
+
+                .design-sec {
+                    padding: 10px;
+                }
+
+
+            }
+
+           
+            
+
         </style>
         <!-- end -->
     </head>
@@ -351,32 +463,39 @@
 
                 <img src="./images/main/AboutUsbanner.jpg" alt="">
 
-                <div class="why-triosco">
-                    <h1>Why TriosCo?</h1>
-                    <br>
-                    <p><strong>We Create: YOU</strong></p>
-                    <br>
-                    <p><span>Bringing the representation of yourself and your brand to life.<br>
-                            We embark on a journey to CREATE.</span>
-                    </p>
-                    <br>
-                    <p><strong>We Connect: With YOU</strong></p>
-                    <br>
-                    <p><span>We strive to know the true YOU, and help you CONNECT with<br>
-                            the right audience at the right time!</span>
-                    </p>
-                    <br>
-                    <p><strong>We Transcend: YOU</strong></p>
-                    <br>
-                    <p></span>With the help of the latest DIGITAL HACKS, let’s start the<br>
-                        journey to TRANSCEND beyond limits.</span>
-                    </p>
 
-                    <div class="our-mission">
-                        <h3>Our Mission:</h3>
-                        <h2>“To Simplify your BUSINESS and HELP you<br> SHINE ONLINE.”</h2>
+
+
+                <div class="row design-sec" style="margin-top:20px ; margin-bottom:20px">
+                    <div class="col-6 why-triosco" style="padding-right: 40px;">
+                        <h1>Design</h1>
+                        <br>
+                        <p><span><h4>We Create: <i>YOU</i></h4>
+
+                            Bringing the representation of yourself and your brand to life. We embark on a journey to CREATE.<br><br>
+                            
+                            <h4>We Connect: With <i>YOU</i></h4>
+                            
+                            We strive to know the true YOU, and help you CONNECT with the right audience at the right time!<br><br>
+                            
+                            <h4>We Transcend: <i>YOU</i></h4>
+                            
+                            With the help of the latest DIGITAL HACKS, let’s start the journey to TRANSCEND beyond limits.</span>
+                        </p>
+    
+                    </div>
+                    <div class="col-6 our-mission ">
+                        <h2>Our Mission:<br><br>
+                            “To Simplify your BUSINESS and HELP you SHINE ONLINE.”</h2>
+    
+    
                     </div>
                 </div>
+
+
+               
+
+                
 
                 <div class="our-team">
                     <h1>Our Team</h1>
@@ -417,7 +536,7 @@
 
                 </div>
 
-                <div class="our-partners">
+                <div class="our-partners" >
                     <h1>Our Partners</h1>
                     <br>
                     <p><strong>WE HAVE PARTNERED WITH THE BEST TO PROVIDE ON-TIME SERVICE TO ALL OUR CLIENTS</strong>
@@ -442,7 +561,7 @@
             <!-- end -->
 
             <!-- what we do -->
-            <div class="what-we-do">
+            <div class="what-we-do" style="margin-top:-20px;">
                 <div class="title">
                     <h1>360° Solution</h1>
                 </div>
@@ -741,7 +860,7 @@
                     <h1>Our Work</h1>
                 </div>
 
-                <div class="sorting">
+               <!-- <div class="sorting">
                     <p><span>Sort by:</span>
                         <a>Show All</a>
                         <a>Consulting</a>
@@ -751,7 +870,7 @@
                         <a>TriosCo Studios</a>
                         <a>Website</a>
                     </p>
-                </div>
+                </div>-->
 
                 <div class="row-1-our-work">
                     <div class="our-work-box box-1-our-work">
@@ -819,7 +938,7 @@
                     <h1>Our Work</h1>
                 </div>
 
-                <div class="dropdown-our-work-tv">
+                <!--<div class="dropdown-our-work-tv">
                     <button class="dropbtn-our-work-tv">Sort by</button>
                     <div class="dropdown-content-our-work-tv">
                         <a href="#">Show All</a>
@@ -830,7 +949,7 @@
                         <a href="#">TriosCo Studios</a>
                         <a href="#">Website</a>
                     </div>
-                </div>
+                </div>-->
 
                 <div class="row-1-our-work-tv">
                     <div class="our-work-box-tv box-1-our-work-tv">
@@ -909,7 +1028,7 @@
                     <h1>Our Work</h1>
                 </div>
 
-                <div class="dropdown-our-work-mv">
+                <!--<div class="dropdown-our-work-mv">
                     <button class="dropbtn-our-work-mv">Sort by</button>
                     <div class="dropdown-content-our-work-mv">
                         <a href="#">Show All</a>
@@ -920,7 +1039,7 @@
                         <a href="#">TriosCo Studios</a>
                         <a href="#">Website</a>
                     </div>
-                </div>
+                </div>-->
 
                 <div class="row-1-our-work-mv">
                     <div class="our-work-box-mv box-1-our-work-mv">

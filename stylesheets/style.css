@@ -115,15 +115,18 @@
 
 /* navbar */
 .navbar-pri {
+  position: fixed;
+  background-color: white;
   height: 55px;
   height: 68px;
   width: 100%;
   margin-top: 0px;
+  z-index: 1;
 }
 
 .navbar-pri ul .navi {
   display: inline-block;
-  padding-right: 42px;
+  padding-inline-end: 42px;
   padding-top: 20px;
 }
 
@@ -168,13 +171,19 @@
   width: 120px;
   cursor: pointer;
   padding-top: 5px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  margin-left: 60px;
 }
 /* end */
 
 /* navbar for mobile view */
 .header {
   display: none;
+}
+
+.burger-triosco-logo img{
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .brand img {
