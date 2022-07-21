@@ -593,20 +593,6 @@
   }
 }
 
-/* media queries */
-/* @media (max-width: 485px) {
-  .animated-text-mv {
-    display: block;
-    position: absolute;
-    font-family: "Roboto", sans-serif;
-    left: 160px;
-    top: 150px;
-  }
-  .inner-text-2-mv {
-    width: 260px;
-  }
-} */
-
 @media (max-width: 485px) {
   .animated-text-mv {
     display: block;
@@ -1266,7 +1252,7 @@
 
 .our-work-box p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.1vw;
+  font-size: 0.9vw;
   letter-spacing: 2px;
   color: #555;
 }
@@ -2062,7 +2048,7 @@
 
 /* form */
 .form {
-  background: url(../images/main/Contact_Us-1.jpg);
+  background: url(../images/main/Contact_Us-2.jpg);
   width: 90%;
   height: 700px;
   display: block;
@@ -2193,7 +2179,7 @@
 /* media queries */
 @media (max-width: 1200px) {
   .form {
-    background: url(../images/main/Contact_Us-1.jpg);
+    background: url(../images/main/Contact_Us-2.jpg);
     width: 90%;
     height: 1300px;
     display: block;
