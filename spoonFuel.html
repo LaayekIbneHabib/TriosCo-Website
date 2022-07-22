@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SpoonFuel - TriosCo</title>
+        <link rel="icon" href="./images/icons/icon.png" />
+
+        <!-- burger menu -->
+        <link rel="stylesheet" type="text/css" href="./public/css/reset.min.css" />
+        <link rel="stylesheet" type="text/css" href="./public/css/style.min.css" />
+        <link rel="stylesheet" type="text/css" href="./public/css/ionicon.min.css" />
+        <!-- end -->
+
+        <!-- roboto 500 font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+        <!-- end -->
+
+        <!-- yantramanav 400 font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap" rel="stylesheet" />
+        <!-- end -->
+
+        <!-- montserrat 200 font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+        <!-- end -->
+
+        <!-- main stylesheet -->
+        <link rel="stylesheet" href="stylesheets/style.css" />
+        <!-- end -->
+
+        <!-- internal css -->
+        <style>
+            @media (max-width: 485px) {
+                .header-pri {
+                    animation: none;
+                    background-repeat: no-repeat;
+                    background-position-y: 55px;
+                    width: 90%;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    position: relative;
+                }
+            }
+
+            .client-images {
+                margin-top: -330px;
+                margin-left: 60px;
+            }
+
+            .client-images img {
+                width: 250px;
+            }
+
+            .first-row {
+                width: 550px;
+                height: 260px;
+            }
+
+            .first-row img {
+                float: left;
+                margin: 5px;
+            }
+
+            .second-row {
+                width: 550px;
+                height: 260px;
+            }
+
+            .second-row img {
+                float: left;
+                margin: 5px;
+            }
+
+            .third-row {
+                width: 550px;
+                height: 260px;
+            }
+
+            .third-row img {
+                float: left;
+                margin: 5px;
+            }
+
+            /* captions */
+            .captions {
+                position: absolute;
+                width: 500px;
+                margin-left: 670px;
+                margin-top: -780px;
+            }
+
+            .captions h2,
+            h3 {
+                font-family: "Roboto", sans-serif;
+                font-weight: lighter;
+            }
+
+            .captions p {
+                font-family: "Roboto", sans-serif;
+                font-size: 13px;
+                color: #555;
+                letter-spacing: 3px;
+            }
+
+            .captions a p {
+                font-family: "Roboto", sans-serif;
+                font-size: 20px;
+                color: black;
+                letter-spacing: 0px;
+                font-weight: lighter;
+            }
+
+            .captions ul li {
+                margin-top: 10px;
+                padding: 5px;
+                display: inline-block;
+            }
+
+            /* end */
+
+            .next-project a {
+                font-size: 20px;
+                color: black;
+                font-family: "Roboto", sans-serif;
+                font-weight: lighter;
+            }
+
+            @media (max-width: 1190px) {
+                .client-images {
+                    margin-left: 0px;
+                }
+
+                .client-images img {
+                    width: 264.7px;
+                }
+
+                .first-row {
+                    width: 550px;
+                    height: 300px;
+                }
+
+                .second-row {
+                    width: 550px;
+                    height: 300px;
+                }
+
+                .third-row {
+                    width: 550px;
+                    height: 300px;
+                }
+
+                .service-materials {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    height: 1400px;
+                }
+
+                .captions {
+                    position: absolute;
+                    width: 510px;
+                    margin-top: 550px;
+                    text-align: left;
+                    margin-left: 28px;
+                }
+            }
+
+            @media (max-width: 560px) {
+
+                .first-row,
+                .second-row,
+                .third-row {
+                    width: 98.2vw;
+                    height: 50vw;
+                }
+
+                .first-row img,
+                .second-row img,
+                .third-row img {
+                    width: 45vw;
+                    width: 46.3vw;
+                }
+
+                .captions {
+                    width: 90vw;
+                    margin-top: 80vw;
+                    padding-right: 30px;
+                }
+            }
+
+            @media(min-width:1300px){
+                .captions{
+                    width: 50vw;
+                }
+            }
+
+        </style>
+        <!-- end -->
+    </head>
+
+    <body>
+        <!-- loader -->
+        <div class="loader-background"
+            style="background-color: rgb(252, 252, 252); width: 100%; height: 600px; overflow: hidden;" id="loader">
+            <img src="./images/main/loader.gif" alt="" id="loader">
+        </div>
+        <!-- end -->
+
+        <!-- window -->
+        <div id="window">
+            <!-- container -->
+            <div class="container-pri">
+                <!-- header -->
+                <div class="header-pri" style="animation: none;">
+                    <!-- navbar -->
+                    <div class="navbar-pri">
+                        <img src="./images/icons/logo-dark.png" alt="" />
+                        <ul>
+                            <li class="navi"><a href="index.html">HOME</a></li>
+                            <li class="navi"><a href="about.html">ABOUT</a></li>
+                            <li class="dropdown-pri navi">
+                                <a href="#" class="dropbtn-pri">SERVICES</a>
+                                <div class="dropdown-content-pri">
+                                    <a href="design.html" style="color: white">Design</a>
+                                    <a href="marketing.html" style="color: white">Marketing</a>
+                                    <a href="website.html" style="color: white">Website</a>
+                                    <a href="ecommerce.html" style="color: white">e-Commerce Operations</a>
+                                    <a href="shineOnline.html" style="color: white">Shine Online</a>
+                                    <a href="trioscoStudios.html" style="color: white">TriosCo Studios</a>
+                                </div>
+                            </li>
+                            <li class="navi"><a href="projects.html">PROJECTS</a></li>
+                            <li class="navi"><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+            </div>
+            <!-- end -->
+
+            <!-- burger menu -->
+            <div class="header">
+                <section class="container">
+                    <div class="wrapper">
+                        <a href="index.html" class="brand"><img src="./images/icons/logo-dark.png" alt="" /></a>
+                        <button type="button" class="burger" id="burger">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </button>
+                        <span class="overlay" id="overlay"></span>
+                        <nav class="navbar" id="navbar">
+                            <ul class="menu">
+                                <!-- temp -->
+                                <a href="index.html" class="brand burger-triosco-logo"><img
+                                        src="./images/icons/logo-dark.png" alt="" /></a>
+                                <!-- temp -->
+                                <li class="menu-item"><a href="index.html">HOME</a></li>
+                                <li class="menu-item"><a href="about.html">ABOUT</a></li>
+                                <li class="menu-item menu-item-child">
+                                    <a href="#" data-toggle="sub-menu">SERVICES<i class="expand"></i></a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="design.html">Desing</a></li>
+                                        <li class="menu-item"><a href="marketing.html">Marketing</a></li>
+                                        <li class="menu-item"><a href="website.html">Website</a></li>
+                                        <li class="menu-item"><a href="ecommerce.html">e-Commerce Operations</a></li>
+                                        <li class="menu-item"><a href="shineOnline.html">Shine Online</a></li>
+                                        <li class="menu-item"><a href="trioscoStudios.html">TriosCo Studios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-child">
+                                    <a href="projects.html">PROJECTS</i></a>
+                                </li>
+                                <li class="menu-item"><a href="contact.html">CONTACT</a></li>
+                                <!-- social -->
+                                <ul style="margin-left: 20px;margin-top: 10px;">
+                                    <li style="display: inline-block;  padding-inline-end: 10px;"><a
+                                            href="https://www.facebook.com/TriosCo/" target="_blank"><img
+                                                src="./images/temp/Facebook.png" alt="" style="width: 26px;"></a></li>
+                                    <li style="display: inline-block;  padding-inline-end: 10px;"><a
+                                            href="https://www.instagram.com/triosco_3/" target="_blank"><img
+                                                src="./images/temp/Instagram.png" alt="" style="width: 26px;"></a></li>
+                                    <li style="display: inline-block;  padding-inline-end: 10px;"><a
+                                            href="https://www.linkedin.com/company/triosco/" target="_blank"><img
+                                                src="./images/temp/Linkedin.png" alt="" style="width: 26px;"></a></li>
+                                    <li style="display: inline-block;  padding-inline-end: 10px;"><a
+                                            href="https://triosco.com/#" target="_blank"><img
+                                                src="./images/temp/Twitter.png" alt="" style="width: 26px;"></a>
+                                    </li>
+                                </ul>
+                                <!-- end -->
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+            <!-- end -->
+
+            <!-- service materials -->
+            <div class="service-materials">
+                <div class="client-images">
+                    <div class="first-row">
+                        <div class="image-1">
+                            <img src="./images/brands/spoon1.jpg" alt="">
+                        </div>
+                        <div class="image-2">
+                            <img src="./images/brands/spoon2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="second-row">
+                        <div class="image-3">
+                            <img src="./images/brands/spoon3.jpg" alt="">
+                        </div>
+                        <div class="image-4">
+                            <img src="./images/brands/spoon4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="third-row">
+                        <div class="image-5">
+                            <img src="./images/brands/spoon5.jpg" alt="">
+                        </div>
+                        <div class="image-6">
+                            <img src="./images/brands/spoon6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="captions">
+                    <h2>Spoonfuel</h2>
+                    <p>DESIGN, MARKETING, TRIOSCO STUDIOS</p>
+                    <br>
+                    <br>
+                    <p>ABOUT THE PROJECT:</p>
+                    <h3>Spoonfuel by Snigdha Deora is a gourmet catering service based in Kolkata that offers 100% vegetarian, customized food platters for any and all events. TriosCo gave Spoonfuel an entirely new and exciting look, with a new logo and menu design! Our studio and photography services ensured that the various yummy dishes would be in the spotlight.</h3>
+                    <!--<br>
+                    <br>
+                    <p>WEBSITE LINK:</p>
+                    <a href="www.fabgourmet.in/">
+                        <p>www.fabgourmet.in/</p>
+                    </a>-->
+                    <br>
+                    <br>
+                    <p>INSTAGRAM:</p>
+                    <a href="https://www.instagram.com/spoonfuelbysnigdhadeora/">
+                        <p>Click to View</p>
+                    </a>
+                    <br>
+                    <p>FACEBOOK:</p>
+                    <a href="">
+                        <p>Click to View</p>
+                    </a>
+                    <br>
+                    
+                    <P>SHARE:</P>
+                    <ul>
+                        <li><a href="https://www.facebook.com/TriosCo/" target="_blank"><img
+                                    src="./images/temp/Facebook.png" alt="" style="width: 36px;"></a></li>
+                        <li><a href="https://www.instagram.com/triosco_3/" target="_blank"><img
+                                    src="./images/temp/Instagram.png" alt="" style="width: 36px;"></a></li>
+                        <li><a href="https://www.linkedin.com/company/triosco/" target="_blank"><img
+                                    src="./images/temp/Linkedin.png" alt="" style="width: 36px;"></a></li>
+                        <li><a href="https://triosco.com/#" target="_blank"><img src="./images/temp/Twitter.png" alt=""
+                                    style="width: 36px;"></a>
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <div class="next-project">
+                        <a href="natkhat.html">Next Project &#8594;</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end -->
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="card">
+                    <img src="./images/icons/logo-light.png" alt="">
+                    <p>TriosCo – Create | Connect | Transcend</p>
+                    <div class="social">
+                        <h1>Follow us</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/TriosCo/" target="_blank"><img
+                                        src="./images/temp/Facebook.png" alt="" style="width: 36px;"></a></li>
+                            <li><a href="https://www.instagram.com/triosco_3/" target="_blank"><img
+                                        src="./images/temp/Instagram.png" alt="" style="width: 36px;"></a></li>
+                            <li><a href="https://www.linkedin.com/company/triosco/" target="_blank"><img
+                                        src="./images/temp/Linkedin.png" alt="" style="width: 36px;"></a></li>
+                            <li><a href="https://triosco.com/#" target="_blank"><img src="./images/temp/Twitter.png"
+                                        alt="" style="width: 36px;"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-container">
+                        <div class="our-services">
+                            <h1>Our Services</h1>
+                            <ul>
+                                <li><a href="design.html">Design</a></li>
+                                <li><a href="marketing.html">Marketing</a></li>
+                                <li><a href="website.html">Website</a></li>
+                                <li><a href="ecommerce.html">e-Commerce Operations</a></li>
+                                <li><a href="shineOnline.html">Shine Online</a></li>
+                                <li><a href="trioscoStudios.html">TriosCo Studios</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="other-links">
+                            <h1>Other Links</h1>
+                            <ul>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#">Copyright</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2022, All Right Reserved <a href="https://triosco.com/">TriosCo</a></p>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+        <!-- end -->
+    </body>
+
+    <script>
+        // loader
+        const myTimeout = setTimeout(myGreeting, 300);
+
+        function myGreeting() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("window").style.display = "block";
+        }
+        // end
+
+        // testimonial
+        var indexValue = 0;
+        function slideShow() {
+            setTimeout(slideShow, 5000);
+            var x;
+            const reviews = document.getElementsByClassName("reviews");
+            for (x = 0; x < reviews.length; x++) {
+                reviews[x].style.display = "none";
+            }
+            indexValue++;
+            if (indexValue > reviews.length) { indexValue = 1 }
+            reviews[indexValue - 1].style.display = "block";
+        }
+        slideShow();
+    // end
+    </script>
+
+    <!-- other script file -->
+    <script defer src="./public/js/script.js"></script>
+    <!-- end -->
+
+    <!-- main script file -->
+    <script src="index.js"></script>
+    <!-- end -->
+
+</html>
